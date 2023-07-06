@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(235, 46%, 20%);
+}
+.container {
+  margin-top: 50px;
+  width: 80%;
+  height: 70%;
+  padding: 20px;
+  display: grid;
+  /* justify-content: center;
+  align-items: center; */
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: red;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "profile work play study "
+    "profile exercise social selfcare";
+}
+
+.profile {
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  grid-area: profile;
+  background-color: grey;
+}
+.name {
+  display: grid;
+  background-color: hsl(235, 45%, 61%);
+  gap: 10px;
+  padding: 20px;
+}
+.days {
+  background-color: hsl(236, 100%, 87%);
+}
+.container img {
+  width: 40px;
+  padding: 10px;
+}
+
+.work {
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: 150px;
+  background-color: hsl(15, 100%, 70%);
+  grid-area: work;
+}
+
+.workclass {
+  background-color: rgb(109, 109, 201);
+  padding: 10px;
+  border-radius: 10px;
+}
+.work img {
+  /* float: right; */
+}
+.work-dotdot {
+  display: flex;
+  justify-content: space-between;
+}
+.work-time {
+  padding: 20px;
+}
+
+.play {
+  /* padding: 20px; */
+  border-radius: 10px;
+  width: 150px;
+  background-color: hsl(15, 100%, 70%);
+  grid-area: play;
+}
+
+.playclass {
+  background-color: rgb(109, 109, 201);
+  padding: 10px;
+  border-radius: 10px;
+}
+.play img {
+  /* float: right; */
+}
+.play-dotdot {
+  display: flex;
+  justify-content: space-between;
+}
+.play-time {
+  padding: 20px;
+}
+
+.study {
+    background: white;
+  grid-area: study;
+}
+.exercise {
+  grid-area: exercise;
+}
+.social {
+  grid-area: social;
+}
+.selfcare {
+  grid-area: selfcare;
+}
