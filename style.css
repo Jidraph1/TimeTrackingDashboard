@@ -62,6 +62,7 @@
   }
   #white {
     color: #fff;
+    font-weight: 500;
   }
 
 .two {
@@ -79,7 +80,7 @@
 .two-content {
   border-radius: 15px;
   background-color: hsl(235, 46%, 20%);
-  height: 84%;
+  height: 85%;
   color: #fff;
 }
   .header {
