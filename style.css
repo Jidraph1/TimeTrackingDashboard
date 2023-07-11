@@ -1,111 +1,149 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
-body {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: hsl(235, 46%, 20%);
-}
+
 .container {
-  margin-top: 50px;
-  width: 80%;
-  height: 70%;
-  padding: 20px;
+  width: 98vw;
+  height: 98vh;
+  background-color: hsl(226, 37%, 7%);
   display: grid;
-  /* justify-content: center;
-  align-items: center; */
-  flex-wrap: wrap;
-  gap: 15px;
-  background-color: red;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas:
-    "profile work play study "
-    "profile exercise social selfcare";
+  justify-items: center;
+  align-items: center;
 }
 
-.profile {
+.content {
+  width: 90%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(2 1fr);
+  gap: 20px;
+  grid-template-areas: 
+  "one two three four"
+  "one five six seven"
+  ;
+}
+
+.one {
+  background-color: hsl(235, 46%, 20%);
   border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  grid-area: profile;
-  background-color: grey;
+  color: #fff;
+  grid-area: one;
 }
-.name {
-  display: grid;
-  background-color: hsl(235, 45%, 61%);
-  gap: 10px;
-  padding: 20px;
+.one-content {
+  background-color: hsl(246, 80%, 60%);
+  border-radius: 15px;
+  padding: 30px;
+  /* padding-bottom: 100px; */
 }
-.days {
-  background-color: hsl(236, 100%, 87%);
+.one img {
+  width: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
 }
-.container img {
-  width: 40px;
-  padding: 10px;
-}
+  .detail{
+    color: hsl(236, 100%, 87%);
+  }
+  .profile-detail {
+    margin-top: 20px;
+  }
+  .name p {
+    font-size: 40px;
+  }
+  .frequency {
+    padding: 30px;
+  }
+  .frequency p {
+    color: hsl(236, 100%, 87%);
+    padding-top: 20px;
+  }
+  #white {
+    color: #fff;
+  }
 
-.work {
-  /* padding: 20px; */
-  border-radius: 10px;
-  width: 150px;
+.two {
   background-color: hsl(15, 100%, 70%);
-  grid-area: work;
+  border-radius: 15px;
+  grid-area: two;
 }
-
-.workclass {
-  background-color: rgb(109, 109, 201);
-  padding: 10px;
-  border-radius: 10px;
-}
-.work img {
-  /* float: right; */
-}
-.work-dotdot {
+ .upper {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
 }
-.work-time {
-  padding: 20px;
+  .upper img {
+    width: 45px;
+  } 
+.two-content {
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  height: 84%;
+  color: #fff;
+}
+  .header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .heading {
+    font-size: 18px;
+    font-weight: 900;
+  }
+  .header img {
+    width: 20px;
+  }
+  .info {
+    padding-left: 20%;
+  }
+  .large-time {
+    font-size: 3em;
+    margin-bottom: 15px;
+  }
+  .time {
+    color: hsl(236, 100%, 87%);
+  }
+  
+
+.three {
+  background-color: hsl(195, 74%, 62%);
+  border-radius: 15px;
+  grid-area: three;
 }
 
-.play {
-  /* padding: 20px; */
-  border-radius: 10px;
-  width: 150px;
-  background-color: hsl(15, 100%, 70%);
-  grid-area: play;
+.four {
+  background-color: hsl(348, 100%, 68%);
+  border-radius: 15px;
+  grid-area: four;
+  
 }
 
-.playclass {
-  background-color: rgb(109, 109, 201);
-  padding: 10px;
-  border-radius: 10px;
+.five {
+  background-color: hsl(145, 58%, 55%);
+  border-radius: 15px;
+  grid-area: five;
 }
-.play img {
-  /* float: right; */
-}
-.play-dotdot {
-  display: flex;
-  justify-content: space-between;
-}
-.play-time {
-  padding: 20px;
-}
+  .exercise img {
+    width: 54px;
+  }
 
-.study {
-    background: white;
-  grid-area: study;
+.six {
+  background-color: hsl(264, 64%, 52%);
+  border-radius: 15px;
+  grid-area: six;
 }
-.exercise {
-  grid-area: exercise;
+  .social img {
+    width: 28px;
+  }
+
+.seven {
+  background-color: hsl(43, 84%, 65%);
+  border-radius: 15px;
+  grid-area: seven;
 }
-.social {
-  grid-area: social;
-}
-.selfcare {
-  grid-area: selfcare;
-}
+ .self-care img {
+  width: 38px;
+ }

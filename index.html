@@ -8,129 +8,134 @@
   
   <title>Frontend Mentor | Time tracking dashboard</title>
   <link rel="stylesheet" href="style.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
-    <div class="profile">
-      <div class="name">
-        <img src="images/image-jeremy.png">
-        <p> Report for</p>
-        <h3> Jeremy Robson</h3>
-      </div>
-      <div class="days">
-        <p>Daily</p>
-        <p>Weekend</p>
-        <p>Monthly</p>
-      </div>
-    </div>
-
-    <div class="work">
-      <img src="images/icon-work.svg">
-      <div class="workclass">
-
-        <div class="work-dotdot">
-          <p>Work </p>
-          <P>...</P>
-        </div>
-  
-        <span class="work-time">
-        <h2> 32hrs </h2>
-        <p> Last Week - 36hrs</p>
-      </span>
-      </div>
-
-      </div>
-      <div class="play">
-        <img src="images/icon-work.svg">
-        <div class="playclass">
-  
-          <div class="play-dotdot">
-            <p>Play</p>
-            <P>...</P>
-          </div>
-    
-          <span class="play-time">
-          <h2> 32hrs </h2>
-          <p> Last Week - 36hrs</p>
-        </span>
-        </div>
-  
-        </div>
-
-        <div class="study">
-          <img src="images/icon-work.svg">
-          <div class="workclass">
-    
-            <div class="work-dotdot">
-              <p>Work </p>
-              <P>...</P>
+    <div class="content">
+      <div class="one">
+        <div class="one-content">
+          <div>
+            <div>
+              <img src="./images/image-jeremy.png" alt="">
             </div>
-      
-            <span class="work-time">
-            <h2> 32hrs </h2>
-            <p> Last Week - 36hrs</p>
-          </span>
-          </div>
-    
-          </div>
-
-          <div class="exercise">
-            <img src="images/icon-work.svg">
-            <div class="workclass">
-      
-              <div class="work-dotdot">
-                <p>Work </p>
-                <P>...</P>
+            <div class="profile-detail">
+              <p class="detail">Report for</p>
+              <div class="name">
+                <p>Jeremy</p>
+                <p>Robson</p>
               </div>
-        
-              <span class="work-time">
-              <h2> 32hrs </h2>
-              <p> Last Week - 36hrs</p>
-            </span>
             </div>
-      
+          </div>
+        </div>
+        <div class="frequency">
+          <p>Daily</p>
+          <p id="white">Weekly</p>
+          <p>Monthly</p>
+        </div>
+      </div>
+
+      <div class="two">
+        <div class="upper">
+          <img src="./images/icon-work.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Work</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
             </div>
+            <div class="info">
+              <p class="large-time">32hrs</p>
+              <p class="time">Last Week - 36hrs</p>
+            </div>
+        </div>
+      </div>
 
-            <div class="social">
-              <img src="images/icon-work.svg">
-              <div class="workclass">
-        
-                <div class="work-dotdot">
-                  <p>Work </p>
-                  <P>...</P>
-                </div>
-          
-                <span class="work-time">
-                <h2> 32hrs </h2>
-                <p> Last Week - 36hrs</p>
-              </span>
-              </div>
-        
-              </div>
+      <div class="three">
+        <div class="upper">
+          <img src="./images/icon-play.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Work</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
+            </div>
+            <div class="info">
+              <p class="large-time">10hrs</p>
+              <p class="time">Last Week - 8hrs</p>
+            </div>
+        </div>
+      </div>
 
-              <div class="selfcare">
-                <img src="images/icon-work.svg">
-                <div class="workclass">
-          
-                  <div class="work-dotdot">
-                    <p>Work </p>
-                    <P>...</P>
-                  </div>
-            
-                  <span class="work-time">
-                  <h2> 32hrs </h2>
-                  <p> Last Week - 36hrs</p>
-                </span>
-                </div>
-          
-                </div>
-     
+      <div class="four">
+        <div class="upper">
+          <img src="./images/icon-study.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Study</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
+            </div>
+            <div class="info">
+              <p class="large-time">4hrs</p>
+              <p class="time">Last Week - 7hrs</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="five">
+        <div class="upper exercise">
+          <img src="./images/icon-exercise.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Exercise</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
+            </div>
+            <div class="info">
+              <p class="large-time">4hrs</p>
+              <p class="time">Last Week - 5hrs</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="six">
+        <div class="upper social">
+          <img src="./images/icon-social.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Social</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
+            </div>
+            <div class="info">
+              <p class="large-time">5hrs</p>
+              <p class="time">Last Week - 10hrs</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="seven">
+        <div class="upper self-care">
+          <img src="./images/icon-self-care.svg" alt="">
+        </div>
+        <div class="two-content">
+            <div class="header">
+              <p class="heading">Self Care</p>
+              <img src="./images/icon-ellipsis.svg" alt="" height="8px">
+            </div>
+            <div class="info">
+              <p class="large-time">2hrs</p>
+              <p class="time">Last Week - 2hrs</p>
+            </div>
+        </div>
+      </div>
+
     </div>
   </div>
 
-
-
-
 </body>
 </html>
+
