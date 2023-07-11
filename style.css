@@ -95,6 +95,7 @@
   }
   .header img {
     width: 20px;
+    height:5px;
   }
   .info {
     padding-left: 20%;
@@ -102,6 +103,7 @@
   .large-time {
     font-size: 3em;
     margin-bottom: 15px;
+    font-weight: 300;
   }
   .time {
     color: hsl(236, 100%, 87%);
@@ -137,6 +139,7 @@
 }
   .social img {
     width: 28px;
+    
   }
 
 .seven {
